@@ -3,31 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ПОДКЛЮЧЕНИЕ СТИЛЕЙ -->
+    <link rel="stylesheet" href="./style.css" />
     <title>lesson-2</title>
+    <!-- <style>
+      body {
+        background-color: rgb(77, 1, 1);
+        color: rgb(92, 80, 80);
+      }
+    </style> -->
   </head>
-  <body>
-    <header>
-      <nav>
+  <!-- Пример подключения инлайн стилей -->
+  <!-- <body style="background-color: black; color: wheat"> -->
+  <body class="full-document">
+    <header id="header">
+      <nav class="main-nav">
         <a><img src="./images/Logo.svg" alt="webstudio-logo" /></a>
-        <ul>
-          <li><a href="#">о нас</a></li>
+        <ul class="nav-list">
+          <li><a href="./index.html">о нас</a></li>
           <li><a href="#">услуги и цены</a></li>
-          <li><a href="#">мастера</a></li>
+          <li><a href="./index.html">мастера</a></li>
           <li><a href="#">контакты</a></li>
         </ul>
-        <ul>
+        <ul class="nav-contacts">
           <li><a href="#">+38 044 111 11 11</a></li>
-          <li><a href="#">онлайн-запись</a></li>
+          <li><a class="online-sign" href="#">онлайн-запись</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <ul>
           <li><a href="#">Instagram</a></li>
           <li><a href="#">Youtube</a></li>
         </ul>
-        <div>
+        <div class="hero-description">
           <p>a hair salon for men in kyiv</p>
           <h1>BarberShop</h1>
           <p>
@@ -40,7 +50,7 @@
           <li><button>вперед</button></li>
         </ul>
       </section>
-      <section>
+      <section class="about-us">
         <div>
           <img src="./images/image-1.svg" alt="haircut-style-1" />
           <img src="./images/image-2.svg" alt="haircut-style-2" />
@@ -48,7 +58,7 @@
         <div>
           <p>о нас</p>
           <h2>
-            Лучший Барбершоп<br />
+            Лучший <span>Барбершоп</span><br />
             твоего города
           </h2>
           <p>
@@ -62,10 +72,10 @@
             клиентами "на одной волне". Поэтому, мы всегда готовы
             усовершенствовать каждого, кто к нам приходит!
           </p>
-          <a href="#">онлайн-запись</a>
+          <a class="online-sign" href="#">онлайн-запись</a>
         </div>
       </section>
-      <section>
+      <section class="services">
         <p>Проведи время в компании лучших мастеров</p>
         <h2>Услуги и цены</h2>
         <ul>
@@ -82,7 +92,7 @@
           </li>
           <li><span>Камуфлирование седины</span><span> от 200 грн.</span></li>
         </ul>
-        <a href="#">онлайн-запись</a>
+        <a class="online-sign" href="#">онлайн-запись</a>
       </section>
       <section>
         <ul>
@@ -112,15 +122,15 @@
           </p>
         </div>
       </section>
-      <section>
+      <section class="barbers">
         <p>для настоящих ценителей атмосферы</p>
         <h2>Наши мастера</h2>
-        <ul>
+        <ul class="barbers-cards">
           <li>
             <img src="./images/john-smith.svg" alt="John Smith photocard" />
             <div>
-              <h3>John Smith</h3>
-              <p>Extreme Barber</p>
+              <h3 class="name">John Smith</h3>
+              <p class="position">Extreme Barber</p>
               <ul>
                 <li>
                   <a href="#"
@@ -152,8 +162,8 @@
           <li>
             <img src="./images/michele-doe.svg" alt="Michele Doe photocard" />
             <div>
-              <h3>Michele Doe</h3>
-              <p>Extreme Barber</p>
+              <h3 class="name">Michele Doe</h3>
+              <p class="position">Extreme Barber</p>
               <ul>
                 <li>
                   <a href="#"
@@ -185,8 +195,8 @@
           <li>
             <img src="./images/alan-black.svg" alt="Alan Black-photocard" />
             <div>
-              <h3>Alan Black</h3>
-              <p>Extreme Barber</p>
+              <h3 class="name">Alan Black</h3>
+              <p class="position">Extreme Barber</p>
               <ul>
                 <li>
                   <a href="#"
